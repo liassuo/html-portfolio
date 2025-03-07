@@ -1,17 +1,25 @@
-.round-image {
-    width: 400px; 
-    height: 400px; 
-    border-radius: 50%;
+body {
+    background: linear-gradient(-45deg, #91b0db, #175ecb, #143978, #06183b);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #ffffff;
 }
 
-.titulo{
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.titulo {
     text-align: center;
 }
 
 .round-image {
-    width: 400px; 
-    height: 400px; 
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
+    border: 3px solid #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -21,21 +29,87 @@
     }
 }
 
-.gradient{
-	background: linear-gradient(-45deg, #6ea7f0, #184da2, #0f2e75, #061d52);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-
+.card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    transition: transform 0.3s ease;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.card:hover {
+    transform: translateY(-10px);
 }
+
+.card-img-top {
+    border-bottom: 1px solid #333;
+}
+
+.btn-outline-dark {
+    border-color: #333;
+    color: #ffffff;
+}
+
+.btn-outline-dark:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.skill-card {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #ffffff;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.certification-card {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #1e1e1e; 
+    color: #ffffff; 
+    padding: 20px 0; 
+}
+
+footer .nav-link {
+    color: #ffffff !important; 
+}
+
+footer .nav-link:hover {
+    color: #cccccc !important; 
+}
+
