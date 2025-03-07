@@ -1,0 +1,41 @@
+.round-image {
+    width: 400px; 
+    height: 400px; 
+    border-radius: 50%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.round-image {
+    width: 400px; 
+    height: 400px; 
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .round-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.gradient{
+	background: linear-gradient(-45deg, #6ea7f0, #184da2, #0f2e75, #061d52);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
